@@ -88,6 +88,15 @@ $githubFiles = @(
   ".github/workflows/ci.yml"
 )
 
+$documentationFiles = @(
+  "docs/images/01-case-library.png",
+  "docs/images/02-case-inventory-grid.png",
+  "docs/images/03-3d-case-locator.png",
+  "docs/images/05-component-search.png",
+  "docs/images/09-case-creator.png",
+  "docs/images/10-custom-case-layout.png"
+)
+
 $safeDirectory = $sourceRoot.Replace('\', '/')
 $trackedFiles = @(& git -c "safe.directory=$safeDirectory" -C $sourceRoot ls-files)
 if ($LASTEXITCODE -ne 0) {
@@ -98,7 +107,7 @@ $selectedFiles = [System.Collections.Generic.HashSet[string]]::new(
   [System.StringComparer]::OrdinalIgnoreCase
 )
 
-foreach ($relativePath in $rootFiles + $scriptFiles + $githubFiles) {
+foreach ($relativePath in $rootFiles + $scriptFiles + $githubFiles + $documentationFiles) {
   [void]$selectedFiles.Add($relativePath.Replace('\', '/'))
 }
 
