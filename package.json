@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@google/model-viewer": "^4.3.1",
-    "@hookform/resolvers": "^3.10.0",
+    "@hookform/resolvers": "^5.5.7",
     "@jridgewell/trace-mapping": "^0.3.31",
     "@modelcontextprotocol/sdk": "^1.30.0",
     "@neondatabase/serverless": "^0.10.4",
