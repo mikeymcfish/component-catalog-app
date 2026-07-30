@@ -6,6 +6,27 @@ combines physical-location tracking with search, stock controls, printable
 labels, BOM matching, uploaded media, and optional 3D models.
 
 
+## Screenshots
+
+![Case Library dashboard showing case layouts, occupancy, and stock status](./docs/images/01-case-library.png)
+
+*Case Library overview with layout previews, occupancy, and stock status.*
+
+| Inventory grid | 3D case locator |
+| --- | --- |
+| ![Case inventory grid showing component names and exact compartment positions](./docs/images/02-case-inventory-grid.png) | ![3D case locator showing components positioned in an open storage case](./docs/images/03-3d-case-locator.png) |
+| Browse components by physical compartment. | Locate stocked parts in the calibrated 3D case view. |
+
+| Search in context | Custom case creator |
+| --- | --- |
+| ![Component search filtering a 3D case to one matching location](./docs/images/05-component-search.png) | ![Custom case creator with row, column, and divider controls](./docs/images/09-case-creator.png) |
+| Search by part and jump to its exact case location. | Define case dimensions and shape compartment dividers. |
+
+![Custom case layout editor showing the complete resizable compartment grid](./docs/images/10-custom-case-layout.png)
+
+*The custom layout editor supports snap guides, keyboard adjustments, and
+unequal compartment sizes.*
+
 ## Features
 
 - Storage cases with top and bottom layers, custom rows and columns, an

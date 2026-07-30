@@ -22,5 +22,21 @@ The SVG category icons in `client/src/assets/icons/` were drawn specifically
 for this public release. They are distributed under the project's `0BSD`
 license.
 
-Runtime uploads, private catalog media, generated screenshots, and third-party
-datasheets or product imagery are not part of the public source release.
+## README screenshots
+
+The project maintainer captured the screenshots in `docs/images/` from the
+Component Catalog application. They intentionally show portions of the
+maintainer's own catalog data and are distributed under the project's `0BSD`
+license.
+
+| File | SHA-256 |
+| --- | --- |
+| `docs/images/01-case-library.png` | `DC895D052547ED89BFC18E30C55446241B02434E3677A9978FE321F31823B0B0` |
+| `docs/images/02-case-inventory-grid.png` | `0336061D1D7FDA25E2435A2E5FF3C5A66E8D0ABA739FDE6D98EF85AF645198FA` |
+| `docs/images/03-3d-case-locator.png` | `50BC5B4C623167B82CC4D4FE2DAD453D1F8ACE679FE2DD558D50A35075788757` |
+| `docs/images/05-component-search.png` | `66156763C207D91363202F21F969FBDC935300A47CF666D12C916A2FC278C4E4` |
+| `docs/images/09-case-creator.png` | `2FECC12E1EA5AB4EC47541D29247484F9F89B18B3AC74DC182DF76ABB8F020BE` |
+| `docs/images/10-custom-case-layout.png` | `D83FC01C222135591593388A7C0FDAAA514E79B2F6E4EFE30F1338901604BFDA` |
+
+Runtime uploads, unselected screenshot collections, third-party datasheets,
+and product imagery are not part of the public source release.
