@@ -1,0 +1,13 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 75 75"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="4"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+  focusable="false"
+>
+  <path d="M8 43h9C17 32 27 32 27 43C27 32 37 32 37 43C37 32 47 32 47 43C47 32 57 32 57 43h10" />
+</svg>

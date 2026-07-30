@@ -1,0 +1,4 @@
+interface:
+  display_name: "Component Catalog"
+  short_description: "Locate parts and safely manage catalog stock"
+  default_prompt: "Use $component-catalog to locate a part or safely update its stock quantity."

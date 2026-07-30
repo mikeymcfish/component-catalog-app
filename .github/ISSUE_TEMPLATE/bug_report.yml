@@ -1,0 +1,80 @@
+name: Bug report
+description: Report a reproducible problem in Component Catalog.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Component Catalog. Remove secrets, personal
+        inventory records, uploaded files, and other private data before posting.
+
+        For security vulnerabilities, use the private reporting link instead of
+        this form.
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Preflight
+      options:
+        - label: I searched the existing issues for this problem.
+          required: true
+        - label: I removed secrets and private inventory data from this report.
+          required: true
+        - label: This is not a security vulnerability.
+          required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      description: Provide the release version or commit SHA where the problem occurs.
+      placeholder: "1.0.0 or abc1234"
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Include your operating system, Node.js version, browser, and storage backend.
+      placeholder: "Windows 11, Node 20.19, Chrome 138, file storage"
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Use synthetic data and list the smallest reliable sequence of steps.
+      placeholder: |
+        1. Start the application with ...
+        2. Create a sample component ...
+        3. Open ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized logs or screenshots
+      description: Do not attach storage.json, uploads, credentials, or screenshots containing real inventory data.
+      render: shell
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context

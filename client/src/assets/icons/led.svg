@@ -1,0 +1,15 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 75 75"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="4"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+  focusable="false"
+>
+  <path d="M8 44h14M46 44h21M46 29v30" />
+  <path d="M22 29v30l24-15-24-15Z" />
+  <path d="m34 26 10-10m0 0h-6m6 0v6M46 29l10-10m0 0h-6m6 0v6" />
+</svg>

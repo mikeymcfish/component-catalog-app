@@ -1,0 +1,184 @@
+{
+  "_instructions": {
+    "summary": "Example import file for ComponentCatalog. This file is valid JSON and can be imported directly.",
+    "validCategories": [
+      "resistor",
+      "capacitor",
+      "ic",
+      "diode",
+      "transistor",
+      "inductor",
+      "crystal",
+      "connector",
+      "led",
+      "switch",
+      "sensor",
+      "other"
+    ],
+    "categoryNotes": "Use the exact lowercase category values above. Unknown or missing categories are imported as other.",
+    "componentPlacement": "Each component.compartmentId must match an id from one of the case compartments below. During import, the app maps those old ids to newly created compartments by matching position and layer.",
+    "caseModelNotes": "Common models are LAYOUT-12x6-BOTH, LAYOUT-6x4-TOP, and LAYOUT-6x4-BOTH."
+  },
+  "version": "1.0",
+  "exportDate": "2026-04-19T00:00:00.000Z",
+  "cases": [
+    {
+      "id": 100,
+      "name": "Example Passives",
+      "model": "LAYOUT-12x6-BOTH",
+      "rows": 6,
+      "cols": 12,
+      "hasBottom": true,
+      "description": "Sample case for common resistors and capacitors",
+      "isActive": true,
+      "compartments": [
+        { "id": 1001, "caseId": 100, "position": "A1", "row": 1, "col": 1, "layer": "top" },
+        { "id": 1002, "caseId": 100, "position": "A2", "row": 1, "col": 2, "layer": "top" },
+        { "id": 1003, "caseId": 100, "position": "A3", "row": 1, "col": 3, "layer": "top" },
+        { "id": 1004, "caseId": 100, "position": "A4", "row": 1, "col": 4, "layer": "top" },
+        { "id": 1005, "caseId": 100, "position": "A5", "row": 1, "col": 5, "layer": "top" },
+        { "id": 1006, "caseId": 100, "position": "A6", "row": 1, "col": 6, "layer": "top" },
+        { "id": 1007, "caseId": 100, "position": "B1", "row": 2, "col": 1, "layer": "top" },
+        { "id": 1008, "caseId": 100, "position": "B2", "row": 2, "col": 2, "layer": "top" },
+        { "id": 1009, "caseId": 100, "position": "B3", "row": 2, "col": 3, "layer": "top" },
+        { "id": 1010, "caseId": 100, "position": "B4", "row": 2, "col": 4, "layer": "top" },
+        { "id": 1011, "caseId": 100, "position": "B5", "row": 2, "col": 5, "layer": "top" },
+        { "id": 1012, "caseId": 100, "position": "B6", "row": 2, "col": 6, "layer": "top" },
+        { "id": 1013, "caseId": 100, "position": "C1", "row": 3, "col": 1, "layer": "top" },
+        { "id": 1014, "caseId": 100, "position": "C2", "row": 3, "col": 2, "layer": "top" },
+        { "id": 1015, "caseId": 100, "position": "C3", "row": 3, "col": 3, "layer": "top" },
+        { "id": 1016, "caseId": 100, "position": "C4", "row": 3, "col": 4, "layer": "top" },
+        { "id": 1017, "caseId": 100, "position": "C5", "row": 3, "col": 5, "layer": "top" },
+        { "id": 1018, "caseId": 100, "position": "C6", "row": 3, "col": 6, "layer": "top" },
+        { "id": 1019, "caseId": 100, "position": "A1", "row": 1, "col": 1, "layer": "bottom" },
+        { "id": 1020, "caseId": 100, "position": "A2", "row": 1, "col": 2, "layer": "bottom" },
+        { "id": 1021, "caseId": 100, "position": "A3", "row": 1, "col": 3, "layer": "bottom" },
+        { "id": 1022, "caseId": 100, "position": "A4", "row": 1, "col": 4, "layer": "bottom" },
+        { "id": 1023, "caseId": 100, "position": "A5", "row": 1, "col": 5, "layer": "bottom" },
+        { "id": 1024, "caseId": 100, "position": "A6", "row": 1, "col": 6, "layer": "bottom" }
+      ]
+    }
+  ],
+  "components": [
+    {
+      "id": 2001,
+      "name": "10 ohm resistor",
+      "compartmentId": 1001,
+      "category": "resistor",
+      "packageSize": "0603",
+      "quantity": 100,
+      "minQuantity": 25,
+      "notes": "General purpose 1 percent resistor"
+    },
+    {
+      "id": 2002,
+      "name": "100 ohm resistor",
+      "compartmentId": 1002,
+      "category": "resistor",
+      "packageSize": "0603",
+      "quantity": 100,
+      "minQuantity": 25,
+      "notes": "General purpose 1 percent resistor"
+    },
+    {
+      "id": 2003,
+      "name": "1k resistor",
+      "compartmentId": 1003,
+      "category": "resistor",
+      "packageSize": "0805",
+      "quantity": 150,
+      "minQuantity": 30,
+      "notes": "Common pull-up and current limiting value"
+    },
+    {
+      "id": 2004,
+      "name": "4.7k resistor",
+      "compartmentId": 1004,
+      "category": "resistor",
+      "packageSize": "0805",
+      "quantity": 120,
+      "minQuantity": 30,
+      "notes": "Common pull-up value"
+    },
+    {
+      "id": 2005,
+      "name": "10k resistor",
+      "compartmentId": 1005,
+      "category": "resistor",
+      "packageSize": "0805",
+      "quantity": 200,
+      "minQuantity": 40,
+      "notes": "Common pull-up or divider value"
+    },
+    {
+      "id": 2006,
+      "name": "100k resistor",
+      "compartmentId": 1006,
+      "category": "resistor",
+      "packageSize": "0805",
+      "quantity": 80,
+      "minQuantity": 20,
+      "notes": "Common feedback and divider value"
+    },
+    {
+      "id": 2007,
+      "name": "100 nF ceramic capacitor",
+      "compartmentId": 1007,
+      "category": "capacitor",
+      "packageSize": "0603",
+      "quantity": 250,
+      "minQuantity": 50,
+      "notes": "Decoupling capacitor"
+    },
+    {
+      "id": 2008,
+      "name": "1 uF ceramic capacitor",
+      "compartmentId": 1008,
+      "category": "capacitor",
+      "packageSize": "0603",
+      "quantity": 120,
+      "minQuantity": 25,
+      "notes": "Local bulk decoupling"
+    },
+    {
+      "id": 2009,
+      "name": "10 uF ceramic capacitor",
+      "compartmentId": 1009,
+      "category": "capacitor",
+      "packageSize": "0805",
+      "quantity": 75,
+      "minQuantity": 20,
+      "notes": "Power rail smoothing"
+    },
+    {
+      "id": 2010,
+      "name": "22 uF ceramic capacitor",
+      "compartmentId": 1010,
+      "category": "capacitor",
+      "packageSize": "1206",
+      "quantity": 40,
+      "minQuantity": 10,
+      "notes": "Input/output bulk capacitance"
+    },
+    {
+      "id": 2011,
+      "name": "Red indicator LED",
+      "compartmentId": 1019,
+      "category": "led",
+      "packageSize": "0805",
+      "quantity": 60,
+      "minQuantity": 15,
+      "notes": "Example non-passive category"
+    },
+    {
+      "id": 2012,
+      "name": "1N4148 switching diode",
+      "compartmentId": 1020,
+      "category": "diode",
+      "packageSize": "SOT-23",
+      "quantity": 50,
+      "minQuantity": 10,
+      "notes": "Example diode category"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+# Dependencies and build output
+node_modules/
+.npm-cache/
+.uv-cache/
+dist/
+coverage/
+server/public/
+vite.config.ts.*
+*.tar.gz
+*.log
+__pycache__/
+*.py[cod]
+
+# Personal runtime state and generated artifacts
+data/
+uploads/
+attached_assets/
+output/
+tmp/
+migration-data.json
+
+# Machine-local configuration and credentials
+.env
+.env.local
+.env.*.local
+.env.phone.local
+kicad-settings.json
+
+# Private/local tooling
+.agents/
+.codex/
+.replit
+
+# Curated public screenshots must be generated from synthetic data first
+screenshots/
+
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

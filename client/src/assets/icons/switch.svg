@@ -1,0 +1,15 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 75 75"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="4"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+  focusable="false"
+>
+  <path d="M8 48h11M56 48h11M26.5 45.5 49 30" />
+  <circle cx="23" cy="48" r="4" />
+  <circle cx="52" cy="48" r="4" />
+</svg>
